@@ -1,12 +1,8 @@
-import os
+import math
 
-BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-dir_files = [filename.lower() for filename in os.listdir(BASE_DIR)]
+# Спросим, что хорошего в этой библиотеке.
+print(math.__doc__)
 
-files_list = ['main.py', 'readme.md']
-
-
-def test_program():
-    for filename in files_list:
-        assert filename in dir_files, (f'Файл {filename} '
-                                       'не найден в корне репозитория')
+# Будет напечатано:
+# This module provides access to the mathematical functions
+# defined by the C standard. 
